@@ -17,6 +17,8 @@ Tugas Big Data B Apache Kafka
 ![image](https://github.com/user-attachments/assets/b02c21cf-9013-49c2-acb9-573a4f0dbada)
 5. Setelah itu, jalankan consumer PySpark dengan command `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3 spark_consumer_script.py`.
 
-![big data suhu](https://github.com/user-attachments/assets/6687350e-e64c-4e6f-a4af-cdd1a0224c3c)
-![big data kelembapan](https://github.com/user-attachments/assets/12eb8632-14a4-4818-a21f-8efc0186d0a0)
-![big data gabungan](https://github.com/user-attachments/assets/f8f05e17-f3fe-4929-9064-5042f68a8b0f) 
+   ![big data suhu](https://github.com/user-attachments/assets/6687350e-e64c-4e6f-a4af-cdd1a0224c3c)
+   ![big data kelembapan](https://github.com/user-attachments/assets/12eb8632-14a4-4818-a21f-8efc0186d0a0)
+   ![big data gabungan](https://github.com/user-attachments/assets/f8f05e17-f3fe-4929-9064-5042f68a8b0f)
+
+Pada consumer, terdapat kolom warning yang bekerja sesuai dengan syarat soal. Jika suhu > 80, maka ada warning "Peringatan Suhu Tinggi". Begitu juga dengan kelembapan > 70, akan ada warning "Peringatan Kelembapan Tinggi".
