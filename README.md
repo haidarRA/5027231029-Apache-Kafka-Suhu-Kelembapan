@@ -19,6 +19,10 @@ Tugas Big Data B Apache Kafka
 
    ![big data suhu](https://github.com/user-attachments/assets/6687350e-e64c-4e6f-a4af-cdd1a0224c3c)
    ![big data kelembapan](https://github.com/user-attachments/assets/12eb8632-14a4-4818-a21f-8efc0186d0a0)
-   ![big data gabungan](https://github.com/user-attachments/assets/f8f05e17-f3fe-4929-9064-5042f68a8b0f)
+   ![image](https://github.com/user-attachments/assets/c9e3b74c-631e-4fd0-afb3-ee1b01305432)
 
-Pada consumer, terdapat kolom warning yang bekerja sesuai dengan syarat soal. Jika suhu > 80, maka ada warning "Peringatan Suhu Tinggi". Begitu juga dengan kelembapan > 70, akan ada warning "Peringatan Kelembapan Tinggi".
+Pada consumer, terdapat kolom warning yang bekerja sesuai dengan syarat soal. Jika suhu > 80, maka ada warning "Peringatan Suhu Tinggi". Begitu juga dengan kelembapan > 70, akan ada warning "Peringatan Kelembapan Tinggi". Untuk join multi-stream pun sama, dengan syarat berikut.
+1. suhu > 80 dan kelembapan <= 70: "Suhu tinggi, kelembapan normal" 
+2. suhu <= 80 dan kelembapan > 70: "Kelembapan tinggi, suhu aman"
+3. suhu > 80 dan kelembapan > 70: "Bahaya tinggi! Barang berisiko rusak"
+4. suhu <= 80 dan kelembapan <= 70: "Aman"
